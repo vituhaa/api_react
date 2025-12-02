@@ -6,13 +6,13 @@
     min-height: 100vh;
 }
 
-.fruits-page .navigation {
+.fruits-page .fruit_navigation {
     margin: 0.9%;
     padding: 0.9%;
     text-align: right;
 }
 
-.fruits-page .navigation a {
+.fruits-page .fruit_navigation a {
     color: #242424;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -22,7 +22,7 @@
     font-size: 18px;
 }
 
-.fruits-page .navigation a:hover {
+.fruits-page .fruit_navigation a:hover {
     border-color: #646cff;
 }
 
@@ -46,27 +46,30 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#search_input {
-    border-radius: 8px;
-    border: 1px solid #646cff;
-    padding: 0.6em 1.2em;
+#search_input_fruit {
+    border-radius: 8px !important;
+    border: 1px solid #646cff !important;
+    padding: 0.6em 1.2em !important;
     font-size: 1em;
     font-family: inherit;
     background-color: #F9F9F9;
     color: inherit;
     transition: border-color 0.25s;
-    min-width: 250px;
+    min-width: 250px !important;
 }
 
-#search_input:focus {
+#search_input_fruit:focus {
     outline: none;
     border-color: #646cff;
     box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.2);
 }
 
-button {
+ .fruits-page button {
     border-radius: 8px;
     border: 1px solid transparent;
     padding: 0.6em 1.2em;
@@ -79,7 +82,7 @@ button {
     color: inherit;
 }
 
-button:hover {
+.fruits-page button:hover {
     border-color: #646cff;
 }
 
@@ -88,6 +91,8 @@ button:hover {
     max-width: 700px;
     width: 100%;
     padding: 0 1rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .fruit_card {
@@ -110,16 +115,19 @@ button:hover {
     line-height: 1.5;
 }
 
-.loading {
-    background-color: #fbbd70;
-    padding: 2rem;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 1.1em;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+.fruit_loading {
+    background-color: #fbbd70 !important;
+    padding: 2rem !important;
+    border-radius: 8px !important;
+    text-align: center !important;
+    font-size: 1.1em !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+    width: auto !important;
+    max-width: 700px !important;
+    margin: 2rem auto !important; 
 }
 
-.error {
+.fruit_error {
     background-color: #ff6b6b;
     padding: 2rem;
     border-radius: 8px;

@@ -100,15 +100,15 @@ const FruitsPage: React.FC = () => {
 
   const renderFruits = () => {
     if (loading) {
-      return <div className="loading">Loading...</div>
+      return <div className="fruit_loading">Loading...</div>
     }
 
     if (error) {
-      return <div className="error">{error}</div>
+      return <div className="fruit_error">{error}</div>
     }
 
     if (filteredFruits.length === 0) {
-      return <div className="error">No fruits found</div>
+      return <div className="fruit_error">No fruits found</div>
     }
 
     return filteredFruits.map((fruit, index) => (
@@ -133,7 +133,7 @@ const FruitsPage: React.FC = () => {
 
   return (
     <div className="fruits-page">
-      <nav className="navigation">
+      <nav className="fruit_navigation">
         <Link to="/">Back to the main page</Link>
       </nav>
 
@@ -143,7 +143,7 @@ const FruitsPage: React.FC = () => {
         <div className="search_fruit">
           <input
             type="text"
-            id="search_input"
+            id="search_input_fruit"
             placeholder="Enter fruit name..."
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
