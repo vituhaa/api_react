@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Праздники</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer type="module" src="./holidays.js"></script>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="logo">Сервисы</div>
+        <nav class="nav">
+            <a href="/API-Pages/index.html" class="active">Главная</a>
+            <a href="/API-Pages/src/pages/wizards/wizards.html">Wizards</a>
+            <a href="/API-Pages/src/pages/fruits/fruits.html">Fruits</a>
+            <a href="/API-Pages/src/pages/holidays/holidays.html">Holidays</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="block pink">
+            <h2>Какие сегодня в России официальные праздники?</h2>
+            <p id="today-date"></p>
+            <div id="today-holidays" class="holiday-list"></div>
+            <div id="today-loading" class="loading">Загрузка праздников по всему миру...</div>
+        </section>
+
+        <section class="block blue">
+            <div class="form-group">
+                <label for="holiday-date">Выберите дату:</label>
+                <input type="date" id="holiday-date">
+            </div>
+
+            <div class="form-group">
+                <label for="country-checkboxes">Выберите страны:</label>
+                <div id="country-checkboxes" class="checkbox-list" aria-label="Список стран"></div>
+                <small>Выберите как минимум 1 страну (по умолчанию выбрана Россия)</small>
+            </div>
+
+            <div class="form-group center-buttons">
+                <button type="button" id="select-all-btn" class="btn">Выбрать все</button>
+                <button type="button" id="deselect-all-btn" class="btn">Снять выделение</button>
+            </div>
+
+            <button id="search-btn" class="btn">Показать праздники</button>
+
+            <div id="search-loading" class="loading" style="display: none;">Загрузка...</div>
+            <div id="search-results" class="holiday-list"></div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>2025<br> Cute Programmers</p>
+    </footer>
+
+</body>
+
+</html>

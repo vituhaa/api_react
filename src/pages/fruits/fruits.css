@@ -1,0 +1,126 @@
+body {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #242424;
+    background: rgba(255, 255, 255, 0.87);
+}
+
+.navigation {
+  margin: 0.9%;
+  padding: 0.9%;
+  text-align: right;
+}
+
+.navigation a {
+  color: #242424;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: border-color 0.25s;
+  font-size: 18px;
+}
+
+.navigation a:hover {
+  border-color: #646cff;
+}
+
+.fruit-start {
+  max-width: 1280px;
+  margin: 5rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.search_fruit {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+#search_input {
+  border-radius: 8px;
+  border: 1px solid #646cff;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: #F9F9F9;
+  color: inherit;
+  transition: border-color 0.25s;
+}
+
+#search_input:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.2);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #F9F9F9;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: inherit;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+.fruit_container {
+    margin: 2rem auto 0 auto;
+    max-width: 700px;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.fruit_card {
+    background-color: #edf9ae;
+    border-radius: 14px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fruit_name {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+}
+
+.fruit_card p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.loading {
+    background-color:#fbbd70;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.error {
+    background-color: #ff6b6b;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    color: #1a1a1a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}

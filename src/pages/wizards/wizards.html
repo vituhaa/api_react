@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Библиотека эликсиров</title>
+    <link rel="stylesheet" href="wizard.css">
+    <script defer type="module" src="./wizard.js"></script>
+</head>
+<body>
+    <nav class="navigation">
+        <a href="/API-Pages/index.html">Главная страница</a>
+    </nav>
+
+    <div class="container">
+        <h1>Библиотека эликсиров</h1>
+
+        <div class="search_bar">
+            <input
+                type="text"
+                id="search_input"
+                placeholder="Введите название эликсира"
+                onkeypress="key_press(event)"
+            >
+            <button id="search_wizard">Найти</button>
+            <button id="find_all">Вывести всё</button>
+        </div>
+
+        <div id="elixir_container" class="elixirs_container">
+
+        </div>
+    </div>
+    
+</body>
+</html>

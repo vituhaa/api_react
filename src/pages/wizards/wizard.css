@@ -1,0 +1,190 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    background: rgb(92, 21, 92);
+    color: #222;
+}
+
+.navigation {
+    background: #9b6298;
+    margin: 0.9%;
+    padding: 0.7%;
+    text-align: center;
+}
+
+.navigation a {
+    color: #222;
+    margin: 0 1rem;
+    padding: 0.6rem 1rem;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.navigation a:hover {
+    background-color: #667eea;
+}
+
+/* class - container */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.container h1 {
+    text-align: center;
+    color: #f8f9fa;
+    margin-bottom: 3rem;
+    font-size: 40px;
+}
+
+/* class - search_bar */
+
+.search_bar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    
+}
+
+#search_input {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    min-width: 60rem;
+    border-radius: 25px;
+}
+
+.search_bar button{
+    display: block;
+    padding: 0.4rem 1.5rem;
+    background: #fa6bff;
+    color: #002244;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.search_bar:hover {
+    background: #ffffff71;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.6);
+}
+
+/* elixir container */
+
+/* ТУТ ОСТАНОВИЛАСЬ */
+
+.elixirs_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+
+.loading {
+    text-align: center;
+    padding: 1.5rem;
+    /* margin: 2rem; */
+    font-size: 1.2rem;
+    color: rgb(255, 212, 244);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.elixir_card {
+    background: rgb(245, 171, 255);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.elixir_card:hover {
+    transform: translateY(-5px);
+}
+
+.elixir_name {
+    color: rgb(86, 24, 143);
+    font-size: 2rem;
+}
+
+.ingredients ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ingredients li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.ingredients li:last-child {
+    border-bottom: none;
+}
+
+.no_elixir {
+    text-align: center;
+    padding: 1.5rem;
+    /* margin: 2rem; */
+    font-size: 1.2rem;
+    color: rgb(255, 88, 102);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem auto;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .navbar a {
+        display: block;
+        margin: 0.5rem 1rem;
+    }
+    
+    #search_input{
+        min-width: 12rem;
+        font-size: 0.8rem;
+    }
+
+    .search_bar{
+        gap: 0.4em;
+    
+    }
+
+    .search_bar button{
+        max-width: 7rem;
+        font-size: 0.8rem;
+    }
+
+    .search_bar:hover{
+        border-radius: 25px;
+    }
+
+    .elixir_card {
+        padding: 1rem;
+    }
+
+    .elixir_name {
+        font-size: 1.5rem;
+    }
+
+    .loading{
+        max-width: 20.5rem;
+    }
+}
